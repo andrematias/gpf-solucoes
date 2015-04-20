@@ -130,3 +130,17 @@ body{
 	margin: 0 auto;
 
 }
+
+
+/* ################################
+			TEXTOS
+################################### */
+
+.titulos{
+
+}
+
+.paragrafos{
+	text-align: justify;
+	text-indent: 20px;
+}
