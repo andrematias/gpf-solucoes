@@ -12,7 +12,7 @@
 			<!--CABEÇALHO DO SITE-->
 			<div class = "header">
 				<a href="http://www.gpfsolucoes.com">
-				<img src="imagens/logo.jpg" alt= "GPF Soluções" title = "GPF Soluções"/>
+				<img src="imagens/logo.png" alt= "GPF Soluções" title = "GPF Soluções"/>
 				</a>
 			</div>
 			<!--FIM DO CABEÇALHO DO SITE-->
