@@ -125,13 +125,54 @@ body{
 ################################### */
 .rodape{
 	width: 1024px;
-	height: 250px;
+	height: auto;
 	background-color: #282828;
 	margin: 0 auto;
+	border: solid 1px #282828;
+	display: table;
+	color: #fff;
+}
+
+.rodape hr{
+	width: 900px;
+	color: #fff;
+	margin-top: 25px;
+}
+
+.rodape p {
+	text-align: center;
+	font-size: 14px;
+}
+
+.rodape a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+}
+
+.rodape h5{
+	color: #fff;	
+}
+
+.rodape #boxLink1{
+	float: left;
+	display: table;
+	margin: 0px 60px 0px 10px;
 
 }
 
+.rodape #boxLink2{
+	display: table;
+	margin: 0px 200px 0px 10px;
+		float: left;
 
+}
+
+.rodape #boxLink3{
+	font-size: 14px;
+	display: table;
+	margin: 0px 30px 0px 0px;
+}
 /* ################################
 			TEXTOS
 ################################### */

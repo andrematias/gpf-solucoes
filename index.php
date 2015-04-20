@@ -68,6 +68,48 @@
 			<!--RODAPÉ CONTEM OS LINKS E DIREITOS AUTORAIS-->
 			<div class = "rodape">
 
+				<hr>
+				<p>Todos os Direitos reservados a <a href="www.gpfsolucoes.com"><strong>GPF Soluções</strong></a>, Desenvolvido por <a href="#"><strong>Bit Suporte TI</strong> </a></p>
+				<div id = "boxLink1">
+			
+					<ul>
+						<h5>Serviços</h5>
+						<a href="#"><li>Instalações Elétricas</li></a>
+						<a href="#"><li>Projetos Elétricos Industriais</li></a>
+						<a href="#"><li>Instalações de Grupo Gerador</li></a>
+						<a href="#"><li>Instalações de Cameras de Segurança</li></a>
+						<a href="#"><li>Instalações Hidráulicas</li></a>
+						<a href="#"><li>Instalações de PABX</li></a>
+						<a href="#"><li>Instalações de CFTV</li></a>
+						<a href="#"><li>Instalações de Ar Condicionado</li></a>
+						<a href="#"><li>Instalações de Redes Estruturadas</li></a>
+					</ul>
+				</div>
+
+				<div id = "boxLink2">
+			
+					<ul>
+						<h5>Galeria</h5>
+						<a href="#"><li>Instalações</li></a>
+						<a href="#"><li>Projetos</li></a>
+						<a href="#"><li>Equipe</li></a>
+					</ul>
+				</div>
+
+				<div id = "boxLink3">
+			
+					<ul>
+						<h5>Contatos</h5>
+						<li>Telefones: (011)4186 - 5099 </ br>
+								(011)7744-6862
+						</li>
+						<li>ID: 768*26958</li>
+						<li>E-mail: freitas@gpfsolucoes.com </ br>
+								paulo@gpfsolucoes.com
+						</li>
+
+					</ul>
+				</div>
 			</div>
 			<!--FIM DO RODAPÉ CONTEM OS LINKS E DIREITOS AUTORAIS-->
 		<!--FIM DA DIV CONTEINER PARA "ENCAIXOTAR O SITE"-->
