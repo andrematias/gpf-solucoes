@@ -11,7 +11,9 @@
 		<div class= "conteiner">
 			<!--CABEÇALHO DO SITE-->
 			<div class = "header">
+				<a href="http://www.gpfsolucoes.com">
 				<img src="imagens/logo.jpg" alt= "GPF Soluções" title = "GPF Soluções"/>
+				</a>
 			</div>
 			<!--FIM DO CABEÇALHO DO SITE-->
 
@@ -37,6 +39,11 @@
 			<!--FIM DO SLIDE CLASS REGIÃO DO SLIDE-->
 			<!--CLASS MENUBAR ARMAZENA LINKS DO MENU E BACKGROUND-->
 			<div class = "menuBar">
+				<!--LINKS PARA PAGINAS-->
+				<a href="#">INICIO</a>
+				<a href="#">SERVIÇOS</a>
+				<a href="#">GALERIA</a>
+				<a href="#">CONTATOS</a>
 
 			</div>
 			<!--FIM DA CLASS MENUBAR ARMAZENA LINKS DO MENU E BACKGROUND-->
