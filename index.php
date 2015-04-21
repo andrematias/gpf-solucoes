@@ -4,6 +4,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<meta charset = "UTF-8">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="scroll/animatescroll.js"></script>
 		<title>GPF Soluções</title>
 	</head>
 	<body>
@@ -11,6 +13,7 @@
 		<div class= "conteiner">
 			<!--CABEÇALHO DO SITE-->
 			<div class = "header">
+				<div id = "topo"></div>
 				<a href="http://www.gpfsolucoes.com">
 				<img src="imagens/logo.png" alt= "GPF Soluções" title = "GPF Soluções"/>
 				</a>
@@ -40,7 +43,7 @@
 			<!--CLASS MENUBAR ARMAZENA LINKS DO MENU E BACKGROUND-->
 			<div class = "menuBar">
 				<!--LINKS PARA PAGINAS-->
-				<a href="?opcao=home&#conteudo">INICIO</a>
+				<a href='?inicio=home.html&#conteudo'> INICIO </a>
 				<a href="?opcao=servicos&#conteudo">SERVIÇOS</a>
 				<a href="?opcao=galeria&#conteudo">GALERIA</a>
 				<a href="?opcao=contatos&#conteudo">CONTATOS</a>
@@ -55,7 +58,9 @@
 					<?php
 						require 'paginas/redirecionador.php';
 					?>
-
+				</div>
+				<div id= "speedNav">
+					<a href="#" onclick = "$('#topo').animatescroll({scrollSpeed:2000,easing:'easeOutBounce'});"><strong>Voltar ao Menu</strong></a>
 				</div>
 			</div>
 			<!--CORPO DO CONTEÚDO DO SITE-->
