@@ -43,7 +43,7 @@
 			<!--CLASS MENUBAR ARMAZENA LINKS DO MENU E BACKGROUND-->
 			<div class = "menuBar">
 				<!--LINKS PARA PAGINAS-->
-				<a href='?inicio=home.html&#conteudo'> INICIO </a>
+				<a href='?opcao=home.html&#conteudo'> INICIO </a>
 				<a href="?opcao=servicos&#conteudo">SERVIÇOS</a>
 				<a href="?opcao=galeria&#conteudo">GALERIA</a>
 				<a href="?opcao=contatos&#conteudo">CONTATOS</a>
