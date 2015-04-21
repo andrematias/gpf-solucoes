@@ -40,10 +40,10 @@
 			<!--CLASS MENUBAR ARMAZENA LINKS DO MENU E BACKGROUND-->
 			<div class = "menuBar">
 				<!--LINKS PARA PAGINAS-->
-				<a href="?opcao=home">INICIO</a>
-				<a href="?opcao=servicos">SERVIÇOS</a>
-				<a href="?opcao=galeria">GALERIA</a>
-				<a href="?opcao=contatos">CONTATOS</a>
+				<a href="?opcao=home&#conteudo">INICIO</a>
+				<a href="?opcao=servicos&#conteudo">SERVIÇOS</a>
+				<a href="?opcao=galeria&#conteudo">GALERIA</a>
+				<a href="?opcao=contatos&#conteudo">CONTATOS</a>
 
 			</div>
 			<!--FIM DA CLASS MENUBAR ARMAZENA LINKS DO MENU E BACKGROUND-->

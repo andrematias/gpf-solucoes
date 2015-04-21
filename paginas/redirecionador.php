@@ -14,7 +14,7 @@
 			break;
 		
 		case 'contatos':
-			include 'contatos.html';
+			include 'contatos.php';
 			break;
 			
 		default:
