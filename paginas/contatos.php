@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!--<link rel="stylesheet" type="text/css" href="css/estilo.css">-->
 		<meta charset = "UTF-8">
 		<title>Contatos</title>
 	</head>
@@ -20,21 +19,62 @@
 		</div>
 
 		<div id= "boxRigthContato">
-			<form name = "FormularioDeContato" method = "post" enctype="multipart/form-data">
+			<!--FORMULARIO DE CONTATO COM VALIDADOR JS-->
+			<form onsubmit="return valida(this);" name = "FormularioDeContato" method = "post" enctype="multipart/form-data">
+				<!--NOME E SOBRENOME DO CLIENTE-->
 				<label>Nome e Sobrenome:</label></br>
-				<input type = "text" name= "nome"/></br>
-				<label>Tel:</label></br>
-				<input type = "text" name= "tel"/></br>
-				<label>E-mail:</label></br>
-				<input type = "text" name= "email"/></br>
-				<label>Assunto:</label></br>
-				<input type = "text" name= "assunto"/></br>
-				<label>Mensagem:</label></br>
-				<textarea rows="10" cols="70" style="resize:none;" name="mensagem">
+				<input type = "text" name= "nome" /> </br>
 
-				</textarea> </br>
-				<input type = "submit" value = "Enviar" name= "enviar" />
+				<!--TELEFONE DO CLIENTE-->
+				<label>Tel:</label></br>
+				<input type = "text" name= "tel" onblur="telefone(this.form);" onFocus="javascript:this.value=''" maxlength="11"/></br>
+
+				<!--E-MAIL DO CLIENTE-->
+				<label>E-mail:</label></br>
+				<input type = "text" name= "email" value = ""/></br>
+
+				<!--ASSUNTO DA MENSAGEM-->
+				<label>Assunto:</label></br>
+				<input type = "text" name= "assunto"  value = ""/></br>
+
+				<!--MESAGEM DO CLIENTE-->
+				<label>Mensagem:</label></br>
+				<textarea  rows="10" cols="70" style="resize:none;" name="mensagem"></textarea> </br>
+
+				<!--BOTÃO DE ENVIO DO FORMULARIO-->
+				<input type = "submit" value = "Enviar" name= "acao" />
 			</form>
+
+			<?php
+			//VARIAVEL $BT REPRESENTA O BOTÃO DO FORMULARIO
+				$bt = $_POST['acao'];
+				//CONDIÇÃO DE ENVIO, SE EXIXTIR O BOTÃO ACAO E ELE TIVER O VALOR ENVIAR FAÇA
+				if (isset($bt) && $bt == 'Enviar' ) {
+					//CRIANDO VARIAVEIS PARA REPRESENTAR CAMPOS DO FORMULARIO E CONFIGURAÇÕES DE CABEÇALHO
+					$remetente = "bitsuporte.ti@gmail.com";
+					$nome      = $_POST['nome'];
+					$tel       = $_POST['tel'];
+					$email     = $_POST['email'];
+					$headers   = "MIME-Version: 1.0";
+					$headers  .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+					$headers  .= 'From: {$nome}  <{$email}>' ."\r\n";
+					$assunto   = $_POST['assunto'];
+					$msg       = $_POST['mensagem'];	
+
+			
+					//ENVIA EMAIL
+					//FUNÇÃO DE QUEBRA DE LINHA DA MENSAGEM DO CLIENTE
+					$msg = wordwrap($msg,70, "<br>", true);
+					//FUNÇÃO MAIL COM REMETENTE, ASSUNTO E MESAGEM DO CONTATO COM FORMAS DE CONTATO DIRETO, NOME, TELEFONE EMAIL
+					mail($remetente, $assunto, 'Contatos com $nome <br>
+					Telefone:$tel <br>
+					E-mail: $email <br>
+					Mensagem: $msg', $headers);
+					echo '<script type="text/javascript">alert("Sua mensagem foi enviada com sucesso, obrigado.");</script>';
+				}
+
+			?>
+
 		</div>
 	</body>
 

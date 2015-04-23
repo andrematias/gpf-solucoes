@@ -73,6 +73,17 @@ body{
 	background-image: url("../imagens/bgSRight.jpg");
 }
 
+.slideConteiner #slideBox #slide .cycle-slideshow{
+	padding: 0px;
+	visibility: hidden;
+}
+
+.slideConteiner #slideBox #slide .cycle-slideshow img{
+	width: 964px;
+	height: 290px;
+}
+
+
 /* ################################
 				MENU
 ################################### */
