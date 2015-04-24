@@ -45,9 +45,11 @@
 				<input type = "submit" value = "Enviar" name= "acao" />
 			</form>
 
-			<?php			
+			<?php
+			//VARIAVEL $BT REPRESENTA O BOTÃO DO FORMULARIO
+				$bt = isset($_POST['acao']);
 				//CONDIÇÃO DE ENVIO, SE EXIXTIR O BOTÃO ACAO E ELE TIVER O VALOR ENVIAR FAÇA
-				if (isset($_POST['acao']) && $_POST['acao'] == 'Enviar' ) {
+				if (isset($bt) && $bt == 'Enviar' ) {
 					//CRIANDO VARIAVEIS PARA REPRESENTAR CAMPOS DO FORMULARIO E CONFIGURAÇÕES DE CABEÇALHO
 					$remetente = "bitsuporte.ti@gmail.com";
 					$nome      = $_POST['nome'];
