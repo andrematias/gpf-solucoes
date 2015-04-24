@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset = "UTF-8">
-		<title>Contatos</title>
-	</head>
-	<body>
+
 		<h1>Contatos</h1>
 		<div id= "boxLeftContato">
 
@@ -76,6 +70,4 @@
 			?>
 
 		</div>
-	</body>
-
-</html>
+	
