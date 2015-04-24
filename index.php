@@ -4,9 +4,9 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<meta charset = "UTF-8">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="script/jquery/jquery-vers.js"></script>
         <script src="script/scroll/animatescroll.js"></script>
-		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+        <script src="script/cycle/cycle.js"></script>
 		<script src = "script/formulario/valida.js"></script>
 
 		<title>GPF Soluções</title>
@@ -34,13 +34,17 @@
 					</div>
 
 					<div id = "slide">
-						<div class= "cycle-slideshow" data-cycle-fx="scrollHorz"
-    data-cycle-pause-on-hover="true"
-    data-cycle-speed="200">
+						<div class= "cycle-slideshow"  data-cycle-fx=scrollHorz
+    data-cycle-timeout=8000>
+        <div class="cycle-pager"></div>
+
 							<img src="imagens/slides/1.jpg">
 							<img src="imagens/slides/2.jpg">
 							<img src="imagens/slides/3.jpg">
 							<img src="imagens/slides/4.jpg">
+							<img src="imagens/slides/5.jpg">
+							<img src="imagens/slides/6.jpg">
+
 						</div>
 					</div>
 
