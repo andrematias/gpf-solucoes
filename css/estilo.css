@@ -152,6 +152,44 @@ body{
 }
 
 /* ################################
+			PAGINA SERVIÇOS
+################################### */
+
+.smallService {
+	display: table;
+	border-bottom: 1px solid #ccc;
+	margin: 0 auto;
+}
+
+.smallService span{
+	float: left;
+	padding: 12px;
+	width: 95px;
+	height: 175px;
+}
+
+.smallService span img{
+	width: 95px;
+	height: 95px;
+	border: 3px solid #ccc;
+}
+
+.smallService span img:hover{
+	border: 3px solid #282828;
+}
+
+.smallService span a{
+	text-decoration: none;
+	color: #000;
+	font-family: times;
+}
+
+.smallService span a:hover{
+	font-weight: bold;
+}
+
+
+/* ################################
 			RODAPÉ
 ################################### */
 .rodape{
