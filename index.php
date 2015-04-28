@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang = "pt-br">
 	<head>
+		<meta content = "A GPF Soluções é especializada em Instalações de Elétrica e Hidráulica, com equipe treinada para serviços rápidos, seguros e limpos em residencias e industrias." name ="description">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<meta charset = "UTF-8">
         <script src="script/jquery/jquery-vers.js"></script>
