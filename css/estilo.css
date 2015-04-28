@@ -188,6 +188,20 @@ body{
 	font-weight: bold;
 }
 
+.descService span {
+	display: table;
+	width: 800px;
+}
+.descService p{
+	text-align: justify;
+}
+
+.descService p img{
+	margin: 5px;
+	width: 200px;
+	height: 250px;
+	align: left;
+}
 
 /* ################################
 			RODAPÉ
