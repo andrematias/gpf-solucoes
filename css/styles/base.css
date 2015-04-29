@@ -12,7 +12,7 @@
 /*posicionando o texto de navegação, adicionando um background, borda e espaçamento interno*/
 .pika-stage {position: relative; background: #fafafa; border: 1px solid #e5e5e5; padding: 10px 10px 40px 10px; text-align:center; height:450px;}
 /*Configurando a imagem para que fique sempre 100% do box pika-stage*/
-.pika-stage img{height:100%;}
+.pika-stage img{height:100%;border: 0px;}
  
 			color: #fafafa; padding: 10px; text-align: right; bottom: 50px; right: 10px;}
 	.pika-stage .caption p {padding: 0; margin: 0; line-height: 14px;}
