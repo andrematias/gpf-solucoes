@@ -4,11 +4,22 @@
 	<head>
 		<meta content = "A GPF Soluções é especializada em Instalações de Elétrica e Hidráulica, com equipe treinada para serviços rápidos, seguros e limpos em residencias e industrias." name ="description">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet"  type="text/css" href="css/styles/bottom.css" />
 		<meta charset = "UTF-8">
         <script src="script/jquery/jquery-vers.js"></script>
         <script src="script/scroll/animatescroll.js"></script>
         <script src="script/cycle/cycle.js"></script>
 		<script src = "script/formulario/valida.js"></script>
+		<script type="text/javascript" src="script/galeria/jquery.jcarousel.min.js"></script>
+		<script type="text/javascript" src="script/galeria/jquery.pikachoose.min.js"></script>
+		<script type="text/javascript" src="script/galeria/lib/jquery.touchwipe.min.js"></script>
+
+		<script language="javascript">
+			$(document).ready(
+				function (){
+					$("#pikame").PikaChoose({carousel:true,carouselOptions:{wrap:'circular'}});
+				});
+		</script>
 
 		<title>GPF Soluções</title>
 	</head>
@@ -31,7 +42,7 @@
 
 				<div id = "slideBox">
 					<div id = "sLeft">
-
+						<!--Conteudo introduzido pelo css-->
 					</div>
 
 					<div id = "slide">
@@ -51,7 +62,7 @@
 
 
 					<div id = "sRigth">
-
+						<!--Conteudo introduzido pelo css-->
 					</div>
 				</div>
 			</div>
