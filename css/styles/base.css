@@ -1,5 +1,5 @@
 /*Editando classe geral*/
-.pikachoose {width: 870px; margin: 0 auto; border: none; height: 600px;}
+.pikachoose {width: 980px; border: none; height: 600px;}
 
 /* Estilo das miniaturas */
 .pika-thumbs{ padding: 0 16px; height: 75px; }
@@ -8,9 +8,9 @@
 	.pika-thumbs li .clip {position:relative;height:100%;text-align: center; vertical-align: middle; overflow: hidden;}
 	
 /*Editando o tamanho do box de texto da navegação "anterior e proximo" e centralizando*/
-.pika-stage, .pika-textnav {width: 700px; margin: 0 auto;}
+.pika-stage, .pika-textnav {width: 900px; margin: 0 auto;}
 /*posicionando o texto de navegação, adicionando um background, borda e espaçamento interno*/
-.pika-stage {position: relative; background: #fafafa; border: 1px solid #e5e5e5; padding: 10px 10px 40px 10px; text-align:center; height:350px;}
+.pika-stage {position: relative; background: #fafafa; border: 1px solid #e5e5e5; padding: 10px 10px 40px 10px; text-align:center; height:450px;}
 /*Configurando a imagem para que fique sempre 100% do box pika-stage*/
 .pika-stage img{height:100%;}
  
