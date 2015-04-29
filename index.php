@@ -24,6 +24,10 @@
 		<title>GPF Soluções</title>
 	</head>
 	<body>
+		<?php
+		// RETIRANDO AS NOTIFICAÇÕES DE ERRO
+		error_reporting(0);
+		?>
 		<!--DIV CONTEINER PARA "ENCAIXOTAR O SITE"-->
 		<div class= "conteiner">
 			<!--CABEÇALHO DO SITE-->
