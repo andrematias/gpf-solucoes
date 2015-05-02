@@ -1,9 +1,7 @@
 <?php
-	$pagina = $_GET ['opcao'];
+
+	$pagina =$_GET ['opcao'];
 	switch ($pagina) {
-		case 'home':
-			include 'home.html';
-			break;
 
 		case 'servicos':
 			include 'servicos.html';
