@@ -1,4 +1,3 @@
-
 		<h1>Contatos</h1>
 		<div id= "boxLeftContato">
 
@@ -38,36 +37,33 @@
 				<!--BOTÃO DE ENVIO DO FORMULARIO-->
 				<input type = "submit" value = "Enviar" name= "acao" />
 			</form>
-
-			<?php
-			//VARIAVEL $BT REPRESENTA O BOTÃO DO FORMULARIO
-				$bt = isset($_POST['acao']);
-				//CONDIÇÃO DE ENVIO, SE EXIXTIR O BOTÃO ACAO E ELE TIVER O VALOR ENVIAR FAÇA
-				if (isset($bt) && $bt == 'Enviar' ) {
-					//CRIANDO VARIAVEIS PARA REPRESENTAR CAMPOS DO FORMULARIO E CONFIGURAÇÕES DE CABEÇALHO
-					$remetente = "bitsuporte.ti@gmail.com";
-					$nome      = $_POST['nome'];
-					$tel       = $_POST['tel'];
-					$email     = $_POST['email'];
-					$headers   = "MIME-Version: 1.0";
-					$headers  .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-					$headers  .= 'From: {$nome}  <{$email}>' ."\r\n";
-					$assunto   = $_POST['assunto'];
-					$msg       = $_POST['mensagem'];	
-
 			
-					//ENVIA EMAIL
-					//FUNÇÃO DE QUEBRA DE LINHA DA MENSAGEM DO CLIENTE
-					$msg = wordwrap($msg,70, "<br>", true);
-					//FUNÇÃO MAIL COM REMETENTE, ASSUNTO E MESAGEM DO CONTATO COM FORMAS DE CONTATO DIRETO, NOME, TELEFONE EMAIL
-					mail($remetente, $assunto, 'Contatos com $nome <br>
-					Telefone:$tel <br>
-					E-mail: $email <br>
-					Mensagem: $msg', $headers);
-					echo '<script type="text/javascript">alert("Sua mensagem foi enviada com sucesso, obrigado.");</script>';
-				}
+			<?php
+if (isset ($_POST['acao'])) {
+    $email_enviar = "bitsuporte.ti@gmail.com";
+    $cc = "andredevelopers@gmail.com";
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
+    $assunto = $_POST['assunto'];
+    $mensagem = $_POST['mensagem'];
+    $headers = "From: {$email}" . "\r\n" . "Reply-To: {$email}" . "\r\n" . "Cc: {$cc}" . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 
-			?>
+ 
+     
+            mail ("$email_enviar","$assunto" , "$mensagem
+            $nome
+            Tel:$tel
+            $email
+            ", "$headers" );
+             
+            echo "<script>alert('Sua mensagem foi enviada com sucesso!!!')</script>";
+         
+    }
+
+?>
+
+		
 
 		</div>
 	
