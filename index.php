@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang = "pt-br">
 	<head>
@@ -75,9 +74,9 @@
 			<div class = "menuBar">
 				<!--LINKS PARA PAGINAS-->
 				<a href='index.php'> INICIO </a>
-				<a href="servicos">SERVIÇOS</a>
-				<a href="galeria">GALERIA</a>
-				<a href="contatos">CONTATOS</a>
+				<a href="?opcao=servicos">SERVIÇOS</a>
+				<a href="?opcao=galeria">GALERIA</a>
+				<a href="?opcao=contatos">CONTATOS</a>
 
 			</div>
 			<!--FIM DA CLASS MENUBAR ARMAZENA LINKS DO MENU E BACKGROUND-->
@@ -104,14 +103,14 @@
 			
 					<ul>
 						<h5>Serviços</h5>
-						<a href="servicos#instalacoes-eletricas"><li>Instalações Elétricas</li></a>
-						<a href="servicos#projetos-eletricos-industriais"><li>Projetos Elétricos Industriais</li></a>
-						<a href="servicos#instalacao-grupo-gerador"><li>Instalações de Grupo Gerador</li></a>
-						<a href="servicos#instalacoes-hidraulicas"><li>Instalações Hidráulicas</li></a>
-						<a href="servicos#pabx"><li>Instalações de PABX</li></a>
-						<a href="servicos#cftv"><li>Instalações de CFTV</li></a>
-						<a href="servicos#instalacao-ar-condicionados"><li>Instalações de Ar Condicionado</li></a>
-						<a href="servicos#instalacao-redes-estruturadas"><li>Instalações de Redes Estruturadas</li></a>
+						<a href="?opcao=servicos#instalacoes-eletricas"><li>Instalações Elétricas</li></a>
+						<a href="?opcao=servicos#projetos-eletricos-industriais"><li>Projetos Elétricos Industriais</li></a>
+						<a href="?opcao=servicos#instalacao-grupo-gerador"><li>Instalações de Grupo Gerador</li></a>
+						<a href="?opcao=servicos#instalacoes-hidraulicas"><li>Instalações Hidráulicas</li></a>
+						<a href="?opcao=servicos#pabx"><li>Instalações de PABX</li></a>
+						<a href="?opcao=servicos#cftv"><li>Instalações de CFTV</li></a>
+						<a href="?opcao=servicos#instalacao-ar-condicionados"><li>Instalações de Ar Condicionado</li></a>
+						<a href="?opcao=servicos#instalacao-redes-estruturadas"><li>Instalações de Redes Estruturadas</li></a>
 					</ul>
 				</div>
 
